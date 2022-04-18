@@ -5,11 +5,13 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	margin: 0;
+	/* margin: 0; */
 	background-color: var(--purple);
+	/* width: 100%;
 	max-inline-size: 819px;
+	min-inline-size: 100px; */
 	gap: 24px;
-	padding-inline: 80px;
+	padding-inline: 32px;
 	padding-block: 56px;
 	border: 40px solid var(--gradient);
 }
@@ -27,7 +29,7 @@ label input:not(.child1 .inputItem) {
 	color: var(--green);
 }
 .inputItem::placeholder{
-	color: var(--white);
+	color: var(--placeholder);
 }
 input:focus {
 	border-bottom: 5px solid var(--bg-color);
@@ -38,6 +40,9 @@ input:focus {
 	gap: 16px;
 }
 @media screen and (min-width: 500px) {
+	.form {
+		padding-inline: 80px;
+	}
 	.child1 {
 		flex-direction: row;
 	}

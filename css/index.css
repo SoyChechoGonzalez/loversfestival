@@ -25,6 +25,7 @@
 	--purple: #7868AC;
 	--white: #FFFFFF;
 	--green: #71BFBD;
+	--placeholder: rgba(255, 255, 255, 0.5);
 	
 	--gradient: var(--green) 10%,var(--green) 25%,var(--bg-color) 50%,var(--purple) 75%,var(--white) 90%;
 	
@@ -33,11 +34,22 @@
 	--font-bold: 'Nexa Bold';
 	--font-black: 'Nexa Black';
 	--input-placeholder: 24px/16px var(--font-regular);
+	--title: 40px/40px var(--font-black);
 }
 body {
-	background-color: blue;
 	height: 100vh;
 	background-image: url('../assets/img/bg.svg');
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+.promotoresTitle {
+	font: var(--title);
+	text-transform: uppercase;
+	color: var(--white);
+	text-align: center;
+}
+@media screen and (min-width: 500px) {
+	:root {
+		--title: 56px/48px var(--font-black);
+	}
 }
