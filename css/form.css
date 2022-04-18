@@ -1,0 +1,44 @@
+.borderOutside {
+	background-image: linear-gradient(35deg,var(--gradient));
+	padding: 10px;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	background-color: var(--purple);
+	max-inline-size: 819px;
+	gap: 24px;
+	padding-inline: 80px;
+	padding-block: 56px;
+	border: 40px solid var(--gradient);
+}
+.form label {
+	width: 100%;
+}
+label input:not(.child1 .inputItem) {
+	width: 100%;
+}
+.inputItem {
+	border: none;
+	outline: none;
+	font: var(--input-placeholder);
+	background: none;
+	color: var(--green);
+}
+.inputItem::placeholder{
+	color: var(--white);
+}
+input:focus {
+	border-bottom: 5px solid var(--bg-color);
+}
+.child1 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+@media screen and (min-width: 500px) {
+	.child1 {
+		flex-direction: row;
+	}
+}

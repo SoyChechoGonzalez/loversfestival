@@ -1,0 +1,43 @@
+@import './reset.css';
+@import './form.css';
+@import './wrapper.css';
+
+/* Typographies */
+@font-face {
+	font-family: "Nexa Regular";
+	src: url('../assets/fonts/Nexa-Regular.otf');
+}
+
+@font-face {
+	font-family: "Nexa Bold";
+	src: url('../assets/fonts/Nexa-Bold.otf');
+}
+
+@font-face {
+	font-family: "Nexa Black";
+	src: url('../assets/fonts/Nexa-Black.otf');
+}
+
+:root {
+	/* Colors */
+	--main-color: #7868AC;
+	--bg-color: #EF7A94;
+	--purple: #7868AC;
+	--white: #FFFFFF;
+	--green: #71BFBD;
+	
+	--gradient: var(--green) 10%,var(--green) 25%,var(--bg-color) 50%,var(--purple) 75%,var(--white) 90%;
+	
+	/* Typographies */
+	--font-regular: 'Nexa Regular';
+	--font-bold: 'Nexa Bold';
+	--font-black: 'Nexa Black';
+	--input-placeholder: 24px/16px var(--font-regular);
+}
+body {
+	background-color: blue;
+	height: 100vh;
+	background-image: url('../assets/img/bg.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
