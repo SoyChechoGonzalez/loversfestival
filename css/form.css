@@ -1,18 +1,16 @@
 .borderOutside {
 	background-image: linear-gradient(35deg,var(--gradient));
 	padding: 10px;
+	display: flex;
+	flex-direction: column;
 }
 .form {
 	display: flex;
 	flex-direction: column;
-	/* margin: 0; */
 	background-color: var(--purple);
-	/* width: 100%;
-	max-inline-size: 819px;
-	min-inline-size: 100px; */
 	gap: 24px;
 	padding-inline: 32px;
-	padding-block: 56px;
+	padding-block: 32px;
 	border: 40px solid var(--gradient);
 }
 .form label {
@@ -28,16 +26,37 @@ label input:not(.child1 .inputItem) {
 	background: none;
 	color: var(--green);
 }
+input:focus {
+	border-bottom: 4px solid var(--bg-color);
+	animation: border .3s ease-in;
+}
 .inputItem::placeholder{
 	color: var(--placeholder);
 }
-input:focus {
-	border-bottom: 5px solid var(--bg-color);
+@keyframes border {
+	0% {
+		border-bottom: 4px solid transparent;
+	}
+	100% {
+		border-bottom: 4px solid var(--bg-color);
+	}
 }
 .child1 {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+}
+.sendInfo {
+	background-color: var(--bg-color);
+	box-shadow: -4.8208px 4px #FFFFFF;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	inline-size: 100%;
+	max-inline-size: 500px;
+	margin: 0 auto;
+	border: none;
+	padding-block: 16px;
+	font: var(--button);
 }
 @media screen and (min-width: 500px) {
 	.form {

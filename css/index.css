@@ -35,6 +35,7 @@
 	--font-black: 'Nexa Black';
 	--input-placeholder: 24px/16px var(--font-regular);
 	--title: 40px/40px var(--font-black);
+	--button: 24px/16px var(--font-black)
 }
 body {
 	height: 100vh;
